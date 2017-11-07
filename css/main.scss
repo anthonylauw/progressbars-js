@@ -1,0 +1,80 @@
+//colors
+$color_fern_approx: #5cb85c;
+$black_10: rgba(0, 0, 0, .1);
+$white: #fff;
+$black_15: rgba(0, 0, 0, .15);
+$color_abbey_approx: #495057;
+$color_mischka_approx: #ced4da;
+$color_mine_shaft_approx: #333;
+$color_royal_purple_approx: rebeccapurple;
+
+//fonts
+$font_0: Arial;
+$font_1: Helvetica;
+$font_2: sans-serif;
+
+//data-uris
+$data_uri_0: "data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E";
+
+h1 {
+	font-family: $font_0, $font_1, $font_2;
+}
+.myProgress {
+	position: relative;
+	height: 20px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	background-color: $color_fern_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 4px;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 0 1px 2px $black_10;
+}
+.myBar {
+	float: left;
+	height: 100%;
+	font-size: 12px;
+	line-height: 20px;
+	color: $white;
+	text-align: center;
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 0 -1px 0 $black_15;
+	//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: width .6s ease;
+}
+.label {
+	text-align: center;
+	line-height: 30px;
+	color: $white;
+}
+span {
+	margin-left: 10px;
+}
+#controls {
+	margin-top: 10px;
+}
+.p-button {
+	width: 90px;
+}
+.selectpicker {
+	max-width: 100%;
+	height: calc(2.25rem +2px);
+	padding: .375rem 1.75rem .375rem .75rem;
+	line-height: 1.5;
+	color: $color_abbey_approx;
+	vertical-align: middle;
+	background: $white url($data_uri_0) no-repeat right .75rem center;
+	background-size: 8px 10px;
+	border: 1px solid $color_mischka_approx;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: .25rem;
+	margin-top: 1rem !important;
+	margin-bottom: 1rem !important;
+}
+.mystyle {
+	//Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: 1px 1px 11px $color_mine_shaft_approx;
+}
+.test {
+	color: $color_royal_purple_approx;
+}
