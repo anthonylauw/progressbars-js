@@ -10,6 +10,5 @@ Progress Bars
 7. responsive solution
 8. Animate the bar change, andworks well when you tap buttons quickly.
 9. 	Version control (git)
-
-Using SCSS
-Styled to a production quality level
+10. Using SCSS
+11. Style to a production quality level
